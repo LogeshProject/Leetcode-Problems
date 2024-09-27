@@ -1,4 +1,5 @@
 
+
 var finalPositionOfSnake2 = function(n, com) {
 
     let num = 0 ;
