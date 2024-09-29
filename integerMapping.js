@@ -35,7 +35,7 @@ function mapping(s){
 
 }
 
-let s = "10#11#12" ;
+let s = "10#11#12" ;    // 10# , 11# , 1, 2
 
 let res = mapping(s);
 
