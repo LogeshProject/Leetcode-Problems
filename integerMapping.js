@@ -41,3 +41,27 @@ let res = mapping(s);
 
 
 console.log(res)
+
+
+
+
+var printVertically = function(s) {
+    let sortArr = s.split(' ').sort((a,b)=>{return a.length - b.length});
+    let Arr = s.split(' ');
+    let max = sortArr[sortArr.length - 1].length;
+    let final =[];
+    for(var i = 0;i<max;i++){
+        let str="";
+        for(let val in Arr){
+            if(Arr[val].charAt(i)){
+                str+=Arr[val].charAt(i)
+            }
+            else{
+                str+=' ';
+            }
+        }
+        final.push(str.trimEnd())
+    }
+    return final;
+};
+
